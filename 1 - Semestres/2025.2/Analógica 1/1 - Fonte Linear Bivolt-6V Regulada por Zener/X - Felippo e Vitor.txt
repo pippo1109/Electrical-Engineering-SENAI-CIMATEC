@@ -1,0 +1,2 @@
+Vitor Farias: Modelagem/simulação do transformador e ponte retificadora + cálculo da capacitância
+Felippo da Silva: Simulação do filtro + modelagem/simulação do Zener

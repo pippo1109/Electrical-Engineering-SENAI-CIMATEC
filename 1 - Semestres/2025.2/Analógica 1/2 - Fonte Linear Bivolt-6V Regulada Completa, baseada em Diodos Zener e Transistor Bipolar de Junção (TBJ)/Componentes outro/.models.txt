@@ -1,0 +1,7 @@
+Diodo Zener:
+Modelo Spice:.model 3EZ6D2 D(Is=18.5p BV=6.2 IBV=435m NBV=.1 VJ=0.7 mfg=MCC type=Zener)
+Link: https://www.digikey.com.br/pt/products/detail/mcc-micro-commercial-components/3EZ6-2D5-TP/17949929
+
+Diodo Retificador:
+Modelo Spice: .model GI750 D(Is=18.5n Rs=10m N=1.65 Cjo=150p M=0.35 Vj=0.7 Fc=0.5 Tt=2.5u Iave=6 Vrrm=50 Irrm=5u mfg=Vishay type=rectifier)
+Link: https://www.digikey.com.br/pt/products/detail/vishay-general-semiconductor-diodes-division/GI756-E3-54/76471
