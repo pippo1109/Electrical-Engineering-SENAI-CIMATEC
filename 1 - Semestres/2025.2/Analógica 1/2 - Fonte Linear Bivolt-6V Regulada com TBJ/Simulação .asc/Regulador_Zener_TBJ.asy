@@ -1,0 +1,14 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 97 96 -65 -16
+TEXT -22 27 Left 1 Regulador
+TEXT -22 48 Left 1 Zener TBJ
+PIN -64 16 NONE 8
+PINATTR PinName Vr
+PINATTR SpiceOrder 1
+PIN 16 96 NONE 8
+PINATTR PinName GND
+PINATTR SpiceOrder 2
+PIN 96 16 NONE 8
+PINATTR PinName Vr_out
+PINATTR SpiceOrder 3

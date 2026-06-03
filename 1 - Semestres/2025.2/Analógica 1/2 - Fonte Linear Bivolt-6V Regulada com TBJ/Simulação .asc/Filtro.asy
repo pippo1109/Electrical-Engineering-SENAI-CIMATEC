@@ -1,0 +1,10 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 80 48 -48 -48
+TEXT -13 -3 Left 2 Filtro
+PIN 16 -48 NONE 8
+PINATTR PinName Vc+
+PINATTR SpiceOrder 1
+PIN 16 48 NONE 8
+PINATTR PinName GND
+PINATTR SpiceOrder 2
