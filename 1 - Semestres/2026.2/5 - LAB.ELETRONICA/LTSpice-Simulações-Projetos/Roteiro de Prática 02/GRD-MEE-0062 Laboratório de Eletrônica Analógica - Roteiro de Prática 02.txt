@@ -1,0 +1,50 @@
+Centro Universitário SENAI CIMATEC
+Eng. Elétrica – Laboratório de Eletrônica Analógica – GRD-MEE-0062 
+Prof. Cleber Vinícius R. Almeida, M. Sc. Eng.
+Roteiro de Prática
+
+Aula Prática 02
+
+1. Título: Fonte Linear com Diodo Zener.
+
+2. Ambiente de Aprendizagem: Laboratório de Eletrônica, CIMATEC 2, 1º andar.
+
+3. Objetivo: Verificar a regulagem de uma fonte DC com diodo Zener.
+
+4. Materiais:
+
+4.1. Equipamentos/Instrumentos:
+
+- 04 Protoboards
+- 04 Osciloscópios
+- 04 Fontes DC
+- 04 Multímetros de bancada
+
+4.2. Diodos/Zeners/LEDs:
+
+- 08 Diodos Zener 1N4734
+- 08 Diosos Zener 1N4742A
+- 16 Diodos de Retificação 1N4004GP
+- 08 LEDs (qualquer cor)
+
+4.3. Transformadores:
+
+- 08 de 220V para 12+12 V (tape central)
+
+4.4. Resistores:
+
+- 08 de 120 ohms / 1/8 watts
+- 08 de 220 ohms / 5% / 1/8 watts
+- 08 de 240 ohms / 1/8 watts (pode ser 02 de 120 ohms / 1/8 watts)
+- 08 de 470 ohms / 1/8 watts
+- 08 de 820 ohms / 1/8 watts
+- 08 de 1k ohms / 1/8 watts
+- 08 de 2k2 ohms / 1/8 watts
+
+4.5. Trimpots:
+
+- 08 de 470 ohms ou 1k ohms
+
+4.6. Capacitores:
+
+- 08 de 470u / 50V
