@@ -1,0 +1,41 @@
+% Criterio de Jury: segunda e terceira ordens
+clear; clc; close all;
+
+% Segunda ordem: T(z) = K/(z^2 - 0.5*z + K)
+ganhos = [0.2 1 1.2];
+k = 0:40;
+u = [1 zeros(1,40)];                 % impulso unitario
+theta = linspace(0,2*pi,200);
+figure('Color','w');
+
+for i = 1:length(ganhos)
+    K = ganhos(i);
+    a = [1 -0.5 K];
+    testes = [abs(a(3))<a(1), polyval(a,1)>0, polyval(a,-1)>0];
+    p = roots(a);
+    y = filter([0 0 K],a,u);         % dois atrasos no numerador
+    fprintf('\nK = %.1f | Jury: %d %d %d\n',K,testes);
+    disp('Polos e modulos:'); disp([p abs(p)]);
+
+    subplot(2,3,i);
+    plot(cos(theta),sin(theta),'k--'); hold on;
+    plot(real(p),imag(p),'rx','MarkerSize',10,'LineWidth',2);
+    axis equal; axis([-1.3 1.3 -1.3 1.3]); grid on;
+    title(sprintf('K = %.1f',K)); xlabel('Re(z)'); ylabel('Im(z)');
+
+    subplot(2,3,i+3);
+    stem(k,y,'filled'); grid on;
+    xlabel('k'); ylabel('y[k]'); title('Resposta ao impulso');
+end
+
+% Terceira ordem: linha b da tabela de Jury
+P = [1 -1.5 0.66 -0.08];
+b = P(4)*P(2:4) - P(1)*P(3:-1:1);
+testes = [abs(P(4))<P(1), polyval(P,1)>0, polyval(P,-1)<0, ...
+          abs(b(3))>abs(b(1))];
+disp('Terceira ordem: [b0 b1 b2]'); disp(b);
+disp('Jury: 1 = condicao atendida, 0 = nao atendida'); disp(testes);
+disp('Polos do exemplo de terceira ordem:'); disp(roots(P));
+
+% Para repetir o contraexemplo do slide 12, use P = [1 0 1.2 0.1]
+% e execute novamente o bloco de terceira ordem a partir da linha b.
